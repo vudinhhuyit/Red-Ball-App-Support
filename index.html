@@ -76,6 +76,16 @@
     background: var(--accent); color: #fff; text-decoration: none; font-weight: 600;
     word-break: break-all;
   }
+  .download { text-align: center; }
+  .store-btn {
+    display: inline-flex; align-items: center; gap: 10px; margin-top: 4px;
+    padding: 12px 22px; border-radius: 12px; background: #000; color: #fff;
+    text-decoration: none; font-weight: 600; font-size: 17px;
+    border: 1px solid #555;
+  }
+  .store-btn small { display: block; font-size: 11px; font-weight: 400; opacity: .85; line-height: 1.1; }
+  .store-btn span.label { text-align: left; line-height: 1.2; }
+  .qr { display: block; margin: 20px auto 8px; width: 168px; height: 168px; padding: 12px; background: #fff; border-radius: 12px; image-rendering: pixelated; }
   footer { text-align: center; color: var(--muted); font-size: 14px; padding: 0 16px 32px; }
 
   /* Only the selected language is shown. */
@@ -110,6 +120,7 @@
     <a href="#about"><span data-lang="en">About</span><span data-lang="vi">Giới thiệu</span></a>
     <a href="#support"><span data-lang="en">Support</span><span data-lang="vi">Hỗ trợ</span></a>
     <a href="#privacy"><span data-lang="en">Privacy Policy</span><span data-lang="vi">Quyền riêng tư</span></a>
+    <a href="#download"><span data-lang="en">Download</span><span data-lang="vi">Tải game</span></a>
   </nav>
 </header>
 
@@ -131,11 +142,12 @@
         <li>Real physics: momentum, friction, bouncing, joints and moving platforms</li>
         <li>Lifts, cars, trains, springboards and boxes to push</li>
         <li>Checkpoints, so you continue from the last flag you reached</li>
-        <li>Pick any level you have unlocked from the level select screen</li>
+        <li>Pick any level you have unlocked from the level select screen, with a preview of each level and a star for every level you finish</li>
         <li>Simple touch controls: ◀ ▶ to roll, ▲ to jump</li>
         <li>Supports hardware keyboards (arrow keys / WASD, R to restart, P to pause)</li>
         <li>Runs at a smooth 60 fps on iPhone and iPad</li>
-        <li>Fully offline, with no ads, no in-app purchases and no data collection</li>
+        <li>Available in English and Vietnamese: switch with one tap on the main menu</li>
+        <li>Free to play with occasional ads. A one-time "Red Ball Pro" purchase removes all ads forever</li>
       </ul>
 
       <h3>Levels</h3>
@@ -172,11 +184,12 @@
         <li>Vật lý chân thực: quán tính, ma sát, độ nảy, khớp nối và bệ di động</li>
         <li>Thang máy, ô tô, tàu hoả, bàn nhún và thùng gỗ</li>
         <li>Có điểm lưu (checkpoint), chơi tiếp từ lá cờ gần nhất</li>
-        <li>Chọn lại bất kỳ màn nào đã mở khoá</li>
+        <li>Chọn lại bất kỳ màn nào đã mở khoá, có ảnh xem trước từng màn và ngôi sao cho mỗi màn đã hoàn thành</li>
         <li>Điều khiển cảm ứng đơn giản: ◀ ▶ để lăn, ▲ để nhảy</li>
         <li>Hỗ trợ bàn phím rời (phím mũi tên / WASD, R để chơi lại, P để tạm dừng)</li>
         <li>Chạy mượt 60 khung hình/giây trên iPhone và iPad</li>
-        <li>Chơi hoàn toàn offline, không quảng cáo, không mua trong ứng dụng, không thu thập dữ liệu</li>
+        <li>Có tiếng Việt và tiếng Anh, đổi ngôn ngữ chỉ với một chạm ở menu chính</li>
+        <li>Chơi miễn phí với quảng cáo thỉnh thoảng. Mua một lần "Red Ball Pro" để bỏ toàn bộ quảng cáo vĩnh viễn</li>
       </ul>
 
       <h3>Các màn chơi</h3>
@@ -217,13 +230,25 @@
       <p>Touching a flag in a level saves your position. If the ball breaks, you continue from the last flag you reached.</p>
 
       <h3>How do I replay a level?</h3>
-      <p>Tap <em>Play</em> on the main menu to open the level select screen, then pick any level you have already unlocked.</p>
+      <p>Tap <em>Play</em> on the main menu to open the level select screen, tap any level you have already unlocked, then tap the Play (triangle) button. After finishing a level you can also tap the replay button on the result panel.</p>
 
       <h3>How do I turn the sound off?</h3>
-      <p>Tap the speaker icon in the top-left corner during a level.</p>
+      <p>Tap the music-note icon in the top-left corner during a level.</p>
+
+      <h3>I am stuck on a level</h3>
+      <p>After a few failed tries a "Stuck?" panel appears. Tap the watch-ad button to watch a short ad and skip the level. A skipped level is unlocked but does not earn a star until you finish it. Red Ball Pro players skip for free.</p>
+
+      <h3>How do I remove the ads?</h3>
+      <p>Tap <em>Remove Ads</em> at the bottom left of the main menu to buy Red Ball Pro, a one-time purchase that removes all ads forever.</p>
+
+      <h3>How do I restore my purchase?</h3>
+      <p>If you reinstalled the app or changed device, tap <em>Restore Purchases</em> at the bottom right of the main menu while signed in with the same Apple ID.</p>
+
+      <h3>How do I change the language?</h3>
+      <p>Tap the EN / VI button at the top right of the main menu. Your choice is remembered.</p>
 
       <h3>My progress is gone</h3>
-      <p>Progress is stored only on your device. Deleting the app also deletes your unlocked levels.</p>
+      <p>Progress is stored only on your device. Deleting the app also deletes your unlocked levels. Your Red Ball Pro purchase is tied to your Apple ID, so you can restore it at any time.</p>
     </div>
 
     <div data-lang="vi">
@@ -242,13 +267,25 @@
       <p>Chạm vào lá cờ trong màn chơi sẽ lưu vị trí. Khi bóng vỡ, bạn chơi tiếp từ lá cờ gần nhất.</p>
 
       <h3>Làm sao chơi lại một màn?</h3>
-      <p>Chạm <em>Play</em> ở menu chính để mở màn hình chọn màn, rồi chọn bất kỳ màn nào đã mở khoá.</p>
+      <p>Chạm <em>Chơi</em> ở menu chính để mở màn hình chọn màn, chạm vào một màn đã mở khoá rồi chạm nút Play (hình tam giác). Sau khi hoàn thành một màn, bạn cũng có thể chạm nút chơi lại trên bảng kết quả.</p>
 
       <h3>Làm sao tắt âm thanh?</h3>
-      <p>Chạm biểu tượng loa ở góc trên bên trái khi đang chơi.</p>
+      <p>Chạm biểu tượng nốt nhạc ở góc trên bên trái khi đang chơi.</p>
+
+      <h3>Tôi bị kẹt ở một màn</h3>
+      <p>Sau vài lần thất bại, bảng "Kẹt rồi?" sẽ hiện ra. Chạm nút xem quảng cáo để xem một quảng cáo ngắn và bỏ qua màn đó. Màn được bỏ qua vẫn được mở khoá nhưng chưa có sao cho đến khi bạn tự hoàn thành. Người dùng Red Ball Pro được bỏ qua miễn phí.</p>
+
+      <h3>Làm sao bỏ quảng cáo?</h3>
+      <p>Chạm <em>Bỏ quảng cáo</em> ở góc dưới bên trái menu chính để mua Red Ball Pro, mua một lần để bỏ toàn bộ quảng cáo vĩnh viễn.</p>
+
+      <h3>Làm sao khôi phục giao dịch đã mua?</h3>
+      <p>Nếu bạn cài lại ứng dụng hoặc đổi thiết bị, hãy chạm <em>Khôi phục giao dịch</em> ở góc dưới bên phải menu chính, với cùng tài khoản Apple ID.</p>
+
+      <h3>Làm sao đổi ngôn ngữ?</h3>
+      <p>Chạm nút EN / VI ở góc trên bên phải menu chính. Lựa chọn của bạn sẽ được ghi nhớ.</p>
 
       <h3>Tiến trình của tôi bị mất</h3>
-      <p>Tiến trình chỉ được lưu trên thiết bị của bạn. Xoá ứng dụng cũng sẽ xoá các màn đã mở khoá.</p>
+      <p>Tiến trình chỉ được lưu trên thiết bị của bạn. Xoá ứng dụng cũng sẽ xoá các màn đã mở khoá. Gói Red Ball Pro gắn với Apple ID của bạn nên có thể khôi phục bất cứ lúc nào.</p>
     </div>
   </section>
 
@@ -256,20 +293,30 @@
   <section id="privacy">
     <div data-lang="en">
       <h2>Privacy Policy</h2>
-      <p class="muted">Last updated: October 15, 2026</p>
+      <p class="muted">Last updated: November 2, 2026</p>
       <p>This policy explains how the Red Ball app (“the app”) handles your information.</p>
 
       <h3>Data we collect</h3>
-      <p>We do not collect, store, or share any personal data. The app has no accounts, no analytics, no advertising, and no tracking, and it does not connect to the internet.</p>
+      <p>We do not collect your name, email or any other personal data, and the app has no accounts. The app uses Firebase (Google) for anonymous usage statistics and crash reports, and shows ads through Google AdMob. Both are described below.</p>
+
+      <h3>Analytics and crash reports</h3>
+      <p>Firebase Analytics records anonymous events such as which level was started or finished, how many times the ball died, whether an ad was shown, and the language you chose. Firebase Crashlytics records crash reports with technical details such as your device model, iOS version and the state of the app at the time of the crash. We use this only to fix bugs and improve the game. Analytics does not use the advertising identifier and is not linked to Google Ads.</p>
 
       <h3>Data stored on your device</h3>
-      <p>The app saves your unlocked levels and your sound on/off setting locally on your device. This data never leaves your device and is deleted when you delete the app.</p>
+      <p>The app saves your unlocked levels, the levels you finished, your sound on/off setting, your language choice and whether you own Red Ball Pro locally on your device. This data stays on your device and is deleted when you delete the app.</p>
 
-      <h3>Third-party services</h3>
-      <p>The app does not use any third-party SDKs, advertising networks, or analytics services.</p>
+      <h3>Advertising</h3>
+      <p>The free version shows ads served by Google AdMob (Google Mobile Ads SDK). To show and measure ads, and to prevent fraud, Google may collect data such as your device identifiers, IP address (and approximate location derived from it), and how you interact with ads. On first launch the app asks, through the system “Allow tracking” dialog, whether ads may be personalized. If you decline, you still see ads, but they are not personalized. You can change this at any time in Settings › Privacy &amp; Security › Tracking. Where required by law (for example in the European Economic Area and the United Kingdom), you are asked for consent through Google’s consent form before ads are requested. Learn more in <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Google’s policy on how it uses data from apps that use its services</a>.</p>
+      <p>Buying Red Ball Pro removes all ads. Owners of Red Ball Pro no longer see ads.</p>
+
+      <h3>In-app purchase</h3>
+      <p>Red Ball Pro is a one-time purchase processed entirely by Apple through the App Store. We never see or store your payment details or Apple ID. We only learn, on your device, whether the purchase is active.</p>
+
+      <h3>Internet</h3>
+      <p>The game itself works offline. An internet connection is only used to load ads and to complete or restore a purchase.</p>
 
       <h3>Children’s privacy</h3>
-      <p>Because the app collects no personal information, it is safe for players of all ages.</p>
+      <p>Red Ball is a general-audience game. We do not knowingly collect personal information from children. Ads are provided by Google AdMob, and the data it collects is described above. If you believe a child has provided personal information to us, email us and we will delete it.</p>
 
       <h3>Changes to this policy</h3>
       <p>If this policy changes, we will update this page and the date above.</p>
@@ -280,26 +327,54 @@
 
     <div data-lang="vi">
       <h2>Chính sách quyền riêng tư</h2>
-      <p class="muted">Cập nhật lần cuối: 15/10/2026</p>
+      <p class="muted">Cập nhật lần cuối: 02/11/2026</p>
       <p>Chính sách này giải thích cách ứng dụng Red Ball (“ứng dụng”) xử lý thông tin của bạn.</p>
 
       <h3>Dữ liệu chúng tôi thu thập</h3>
-      <p>Chúng tôi không thu thập, lưu trữ hay chia sẻ bất kỳ dữ liệu cá nhân nào. Ứng dụng không có tài khoản, không phân tích hành vi, không quảng cáo, không theo dõi và không kết nối Internet.</p>
+      <p>Chúng tôi không thu thập tên, email hay bất kỳ dữ liệu cá nhân nào của bạn, và ứng dụng không có tài khoản. Ứng dụng dùng Firebase (Google) để thống kê sử dụng ẩn danh và báo cáo sự cố, đồng thời hiển thị quảng cáo qua Google AdMob. Cả hai được mô tả bên dưới.</p>
+
+      <h3>Phân tích và báo cáo sự cố</h3>
+      <p>Firebase Analytics ghi lại các sự kiện ẩn danh như màn nào được bắt đầu hoặc hoàn thành, số lần bóng bị vỡ, có hiển thị quảng cáo hay không và ngôn ngữ bạn chọn. Firebase Crashlytics ghi lại báo cáo sự cố kèm thông tin kỹ thuật như mẫu thiết bị, phiên bản iOS và trạng thái ứng dụng lúc xảy ra sự cố. Chúng tôi chỉ dùng dữ liệu này để sửa lỗi và cải thiện trò chơi. Analytics không dùng mã định danh quảng cáo và không liên kết với Google Ads.</p>
 
       <h3>Dữ liệu lưu trên thiết bị</h3>
-      <p>Ứng dụng lưu các màn đã mở khoá và cài đặt bật/tắt âm thanh ngay trên thiết bị của bạn. Dữ liệu này không bao giờ rời khỏi thiết bị và sẽ bị xoá khi bạn xoá ứng dụng.</p>
+      <p>Ứng dụng lưu ngay trên thiết bị của bạn: các màn đã mở khoá, các màn đã hoàn thành, cài đặt bật/tắt âm thanh, ngôn ngữ bạn chọn và việc bạn có sở hữu Red Ball Pro hay không. Dữ liệu này nằm trên thiết bị và sẽ bị xoá khi bạn xoá ứng dụng.</p>
 
-      <h3>Dịch vụ bên thứ ba</h3>
-      <p>Ứng dụng không sử dụng SDK bên thứ ba, mạng quảng cáo hay dịch vụ phân tích nào.</p>
+      <h3>Quảng cáo</h3>
+      <p>Bản miễn phí hiển thị quảng cáo do Google AdMob (Google Mobile Ads SDK) cung cấp. Để hiển thị, đo lường quảng cáo và chống gian lận, Google có thể thu thập dữ liệu như mã định danh thiết bị, địa chỉ IP (và vị trí gần đúng suy ra từ đó) và cách bạn tương tác với quảng cáo. Lần đầu mở ứng dụng, hộp thoại “Cho phép theo dõi” của hệ thống sẽ hỏi bạn có đồng ý để quảng cáo được cá nhân hoá hay không. Nếu từ chối, bạn vẫn thấy quảng cáo nhưng không được cá nhân hoá. Bạn có thể đổi lựa chọn bất cứ lúc nào trong Cài đặt › Quyền riêng tư &amp; Bảo mật › Theo dõi. Khi pháp luật yêu cầu (ví dụ ở Khu vực Kinh tế Châu Âu và Vương quốc Anh), bạn sẽ được hỏi đồng ý qua biểu mẫu của Google trước khi quảng cáo được yêu cầu. Tìm hiểu thêm tại <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">chính sách của Google về cách sử dụng dữ liệu từ các ứng dụng dùng dịch vụ của họ</a>.</p>
+      <p>Mua Red Ball Pro sẽ bỏ toàn bộ quảng cáo. Người sở hữu Red Ball Pro không còn thấy quảng cáo.</p>
+
+      <h3>Mua trong ứng dụng</h3>
+      <p>Red Ball Pro là giao dịch mua một lần, được Apple xử lý hoàn toàn qua App Store. Chúng tôi không bao giờ thấy hay lưu thông tin thanh toán hoặc Apple ID của bạn. Chúng tôi chỉ biết, ngay trên thiết bị của bạn, giao dịch còn hiệu lực hay không.</p>
+
+      <h3>Internet</h3>
+      <p>Bản thân trò chơi chạy được khi không có mạng. Kết nối Internet chỉ dùng để tải quảng cáo và để hoàn tất hoặc khôi phục giao dịch mua.</p>
 
       <h3>Quyền riêng tư của trẻ em</h3>
-      <p>Vì ứng dụng không thu thập thông tin cá nhân nào, người chơi ở mọi lứa tuổi đều có thể sử dụng an toàn.</p>
+      <p>Red Ball là trò chơi dành cho mọi đối tượng. Chúng tôi không cố ý thu thập thông tin cá nhân từ trẻ em. Quảng cáo do Google AdMob cung cấp và dữ liệu mà dịch vụ này thu thập được mô tả ở trên. Nếu bạn cho rằng một trẻ em đã cung cấp thông tin cá nhân cho chúng tôi, hãy gửi email và chúng tôi sẽ xoá thông tin đó.</p>
 
       <h3>Thay đổi chính sách</h3>
       <p>Nếu chính sách này thay đổi, chúng tôi sẽ cập nhật trang này và ngày ở trên.</p>
 
       <h3>Liên hệ</h3>
       <p>Có thắc mắc về chính sách này? Gửi email tới <a href="mailto:vudinhhuyit@gmail.com">vudinhhuyit@gmail.com</a>.</p>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section id="download" class="download">
+    <div data-lang="en">
+      <h2>Get Red Ball</h2>
+      <p>Free on the App Store for iPhone and iPad.</p>
+      <a class="store-btn" href="https://apps.apple.com/vn/app/redball-2d/id6822674819"><span class="label"><small>Download on the</small>App Store</span></a>
+      <img class="qr" src="qr-appstore.png" alt="QR code to download Red Ball on the App Store" width="168" height="168">
+      <p class="muted">Or scan this QR code with your camera.</p>
+    </div>
+    <div data-lang="vi">
+      <h2>Tải Red Ball</h2>
+      <p>Miễn phí trên App Store cho iPhone và iPad.</p>
+      <a class="store-btn" href="https://apps.apple.com/vn/app/redball-2d/id6822674819"><span class="label"><small>Tải xuống trên</small>App Store</span></a>
+      <img class="qr" src="qr-appstore.png" alt="Mã QR tải Red Ball trên App Store" width="168" height="168">
+      <p class="muted">Hoặc quét mã QR này bằng camera.</p>
     </div>
   </section>
 </main>
